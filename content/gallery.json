@@ -1,8 +1,20 @@
 {
   "items": [
-    { "caption": "Biryani", "image": "" },
-    { "caption": "Butter Chicken", "image": "" },
-    { "caption": "Starters", "image": "" },
-    { "caption": "Packed order", "image": "" }
+    {
+      "caption": "Biryani",
+      "image": "https://spicydelight.smashstudio.co.in/wp-content/uploads/2026/06/pexels-dainiktales-19834445-1-scaled.jpg"
+    },
+    {
+      "caption": "Butter Chicken",
+      "image": ""
+    },
+    {
+      "caption": "Starters",
+      "image": ""
+    },
+    {
+      "caption": "Packed order",
+      "image": ""
+    }
   ]
 }
