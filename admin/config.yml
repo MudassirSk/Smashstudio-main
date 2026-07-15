@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME   # e.g. smashstudio/amb-delights
+  repo: MudassirSk/Smashstudio-main   # e.g. smashstudio/amb-delights
   branch: main
-  base_url: https://YOUR-SITE.pages.dev        # your Cloudflare Pages URL (or custom domain), no trailing slash
+  base_url: https://smashstudio.mudassirs.workers.dev        # your Cloudflare Pages URL (or custom domain), no trailing slash
   auth_endpoint: api/auth
 
 media_folder: "content/images"   # where uploaded photos are stored in the repo
