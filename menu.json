@@ -1,36 +1,35 @@
 {
-  "categories": [
+  "restaurantName": "Chaat House",
+  "highlights": [
     {
-      "name": "Starters",
-      "items": [
-        { "name": "Chicken 65", "tag": "Spicy", "price": "₹220" },
-        { "name": "Paneer Tikka", "tag": "Veg", "price": "₹200" },
-        { "name": "Veg Spring Rolls", "tag": "Veg", "price": "₹160" }
-      ]
+      "title": "Pani Puri & Dahi Puri",
+      "description": "Hollow crispy puris filled with spiced mashed potatoes, topped with your choice of tangy tamarind water or sweetened yogurt.",
+      "price": "£5.50"
     },
     {
-      "name": "Biryani & Rice",
-      "items": [
-        { "name": "Chicken Biryani", "tag": "Bestseller", "price": "₹260" },
-        { "name": "Mutton Biryani", "tag": "", "price": "₹320" },
-        { "name": "Veg Pulao", "tag": "Veg", "price": "₹190" }
-      ]
+      "title": "Signature Samosa Chaat",
+      "description": "Crushed golden samosas smothered in fresh yogurt, tangy tamarind chutney, zesty mint sauce, and crunchy sev.",
+      "price": "£6.95"
     },
     {
-      "name": "Curries & Mains",
-      "items": [
-        { "name": "Butter Chicken", "tag": "Bestseller", "price": "₹280" },
-        { "name": "Paneer Butter Masala", "tag": "Veg", "price": "₹240" },
-        { "name": "Dal Tadka", "tag": "Veg", "price": "₹150" }
-      ]
+      "title": "Chana Bhatura",
+      "description": "A Punjabi classic. Spiced, slow-cooked chickpea curry served alongside golden, fluffy fried bread and fresh onions.",
+      "price": "£8.95"
     },
     {
-      "name": "Combos & Extras",
-      "items": [
-        { "name": "Meal for One", "tag": "Combo", "price": "₹249" },
-        { "name": "Family Combo (4)", "tag": "Combo", "price": "₹899" },
-        { "name": "Gulab Jamun (2 pc)", "tag": "", "price": "₹80" }
-      ]
+      "title": "Authentic Chicken Biryani",
+      "description": "Aromatic basmati rice cooked slowly with tender chicken, saffron, and traditional spices. Served with cooling raita.",
+      "price": "£10.50"
+    },
+    {
+      "title": "Lamb Rogan Josh",
+      "description": "Tender pieces of lamb slow-cooked in a rich, deeply spiced tomato and caramelized onion gravy.",
+      "price": "£11.95"
+    },
+    {
+      "title": "Warm Gulab Jamun",
+      "description": "Soft milk dumplings served warm in a fragrant cardamom and rose water syrup.",
+      "price": "£4.50"
     }
   ]
 }
