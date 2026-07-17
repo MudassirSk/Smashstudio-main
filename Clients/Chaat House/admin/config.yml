@@ -1,0 +1,67 @@
+backend:
+  name: github
+  repo: MudassirSk/Smashstudio-main   # e.g. smashstudio/amb-delights
+  branch: main
+  base_url: https://smashstudio.mudassirs.workers.dev        # your Cloudflare Pages URL (or custom domain), no trailing slash
+  auth_endpoint: api/auth
+
+media_folder: "content/images"   # where uploaded photos are stored in the repo
+public_folder: "/content/images" # where the site expects to find them when rendering
+
+collections:
+  - name: "settings"
+    label: "Contact & Hours"
+    files:
+      - file: "content/settings.json"
+        label: "Contact & Hours"
+        name: "settings"
+        fields:
+          - { label: "WhatsApp Number (with country code, digits only, no + or spaces)", name: "whatsappNumber", widget: "string" }
+          - { label: "WhatsApp Pre-filled Message", name: "whatsappMessage", widget: "string" }
+          - { label: "Phone Number (with country code, e.g. +910000000000)", name: "phoneNumber", widget: "string" }
+          - { label: "Phone Number — how it's displayed on the site", name: "phoneDisplay", widget: "string" }
+          - { label: "Delivery Area", name: "deliveryArea", widget: "string" }
+          - { label: "Hours", name: "hours", widget: "string" }
+          - { label: "Delivery Platforms Note", name: "deliveryPlatforms", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Instagram Handle (no @)", name: "instagramHandle", widget: "string" }
+          - { label: "City", name: "city", widget: "string" }
+          - { label: "About — Paragraph 1", name: "aboutBody1", widget: "text" }
+          - { label: "About — Paragraph 2", name: "aboutBody2", widget: "text" }
+
+  - name: "menu"
+    label: "Menu"
+    files:
+      - file: "content/menu.json"
+        label: "Menu Items"
+        name: "menu"
+        fields:
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Category Name", name: "name", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.name}} — {{fields.price}}"
+                fields:
+                  - { label: "Dish Name", name: "name", widget: "string" }
+                  - { label: "Tag (e.g. Spicy, Veg, Bestseller) — leave blank for none", name: "tag", widget: "string", required: false }
+                  - { label: "Price (e.g. ₹220)", name: "price", widget: "string" }
+
+  - name: "gallery"
+    label: "Gallery"
+    files:
+      - file: "content/gallery.json"
+        label: "Gallery Photos"
+        name: "gallery"
+        fields:
+          - label: "Photos"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - { label: "Caption", name: "caption", widget: "string" }
+              - { label: "Photo (leave empty to show a placeholder tile)", name: "image", widget: "image", required: false }
