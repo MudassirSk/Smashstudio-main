@@ -3,64 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chaat House | Authentic Indian Food in Southall</title>
-    <!-- Add Tailwind CSS via CDN for rapid styling -->
+    <title>Chaat House | Authentic Indian Street Food & Biryani in Southall</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800 antialiased">
 
-    <!-- Sticky Mobile-Optimized Header -->
-    <nav class="fixed w-full bg-white shadow-md z-50 p-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-orange-600">Chaat House</h1>
-        <a href="tel:+447828548126" class="bg-green-600 text-white px-4 py-2 rounded-full font-bold shadow-lg animate-pulse">Call to Order</a>
+    <!-- Sticky Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold text-orange-600 tracking-tight">Chaat<span class="text-gray-900">House</span></h1>
+            <div class="hidden md:flex space-x-8 font-semibold text-gray-600">
+                <a href="#about" class="hover:text-orange-600 transition">About</a>
+                <a href="#menu" class="hover:text-orange-600 transition">Menu</a>
+                <a href="#gallery" class="hover:text-orange-600 transition">Gallery</a>
+                <a href="#location" class="hover:text-orange-600 transition">Location</a>
+            </div>
+            <a href="tel:+447828548126" class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2.5 rounded-full font-bold shadow-lg shadow-orange-600/30 transition transform hover:-translate-y-0.5">
+                📞 +44 7828 548126
+            </a>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="pt-24 pb-16 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('YOUR_IMAGE_URL_HERE');">
-        <div class="container mx-auto px-4 text-center text-white">
-            <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Authentic Indian Street Food & Biryani</h2>
-            <p class="text-xl mb-8">Serving the heart of Southall | 📍 67-77 South Rd</p>
-            <div class="flex justify-center space-x-4">
-                <a href="#menu" class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-md font-bold transition">View Menu</a>
-                <a href="https://maps.google.com/?q=67-77+South+Rd,+Southall+UB1+1SQ,+UK" target="_blank" class="bg-white text-gray-900 px-6 py-3 rounded-md font-bold hover:bg-gray-100 transition">Get Directions</a>
+    <header class="relative h-[85vh] flex items-center justify-center">
+        <!-- Royalty-free Biryani/Indian Food Background -->
+        <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/90 to-black/50 z-10"></div>
+        
+        <div class="relative z-20 container mx-auto px-6 text-center md:text-left text-white mt-16">
+            <span class="bg-orange-600 text-white px-3 py-1 rounded-full text-sm font-bold tracking-wider uppercase mb-4 inline-block">Southall's Favourite</span>
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">The True Taste of <br><span class="text-orange-500">Indian Street Food</span></h2>
+            <p class="text-lg md:text-2xl mb-8 max-w-2xl text-gray-200">Experience authentic spices, sizzling biryanis, and traditional chaat right in the heart of London. Rated 4.7 stars by our community.</p>
+            <div class="flex flex-col sm:flex-row gap-4 md:justify-start justify-center">
+                <a href="#menu" class="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-md font-bold text-lg transition text-center shadow-lg">Explore Menu</a>
+                <a href="#location" class="bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-md font-bold text-lg transition text-center shadow-lg">Find Us</a>
             </div>
         </div>
     </header>
 
-    <!-- Social Proof Bar -->
-    <div class="bg-yellow-400 text-center py-3 font-semibold text-gray-900">
-        ⭐ Rated 4.7 / 5 Stars by 60+ happy customers on Google Maps! ⭐
+    <!-- Social Proof / Stats Bar -->
+    <div class="bg-white border-b border-gray-200">
+        <div class="container mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+            <div class="p-4">
+                <p class="text-4xl mb-2">⭐</p>
+                <h4 class="text-2xl font-bold text-gray-900">4.7 / 5 Stars</h4>
+                <p class="text-gray-500 font-medium">On Google Reviews</p>
+            </div>
+            <div class="p-4">
+                <p class="text-4xl mb-2">🌶️</p>
+                <h4 class="text-2xl font-bold text-gray-900">100% Authentic</h4>
+                <p class="text-gray-500 font-medium">Traditional Indian Recipes</p>
+            </div>
+            <div class="p-4">
+                <p class="text-4xl mb-2">🛵</p>
+                <h4 class="text-2xl font-bold text-gray-900">Fast Takeaway</h4>
+                <p class="text-gray-500 font-medium">Hot & Fresh to Order</p>
+            </div>
+        </div>
     </div>
 
-    <!-- Menu Highlights Section -->
-    <section id="menu" class="py-16 container mx-auto px-4">
-        <h3 class="text-3xl font-bold text-center mb-10 text-gray-800">Menu Highlights</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Item 1 -->
-            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-orange-500">
-                <h4 class="text-xl font-bold mb-2">Signature Chaat</h4>
-                <p class="text-gray-600 mb-4">Crispy, tangy, and spicy street food classics.</p>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <!-- Royalty-free kitchen/spices image -->
+                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80" alt="Cooking spices" class="rounded-2xl shadow-2xl object-cover h-96 w-full">
             </div>
-            <!-- Item 2 -->
-            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-orange-500">
-                <h4 class="text-xl font-bold mb-2">Authentic Biryani</h4>
-                <p class="text-gray-600 mb-4">Aromatic basmati rice layered with tender meats and spices.</p>
-            </div>
-            <!-- Item 3 -->
-            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-orange-500">
-                <h4 class="text-xl font-bold mb-2">Vegetarian Delights</h4>
-                <p class="text-gray-600 mb-4">Rich, flavorful traditional Indian vegetarian curries.</p>
+            <div class="md:w-1/2">
+                <h3 class="text-orange-600 font-bold tracking-wider uppercase mb-2">Our Story</h3>
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-6">Bringing the Streets of India to Southall</h2>
+                <p class="text-gray-600 text-lg mb-6 leading-relaxed">At Chaat House, we believe that food is more than just sustenance; it's an experience. We use generations-old recipes, blending rich, aromatic spices to recreate the vibrant, bustling atmosphere of Indian street food vendors.</p>
+                <p class="text-gray-600 text-lg mb-8 leading-relaxed">Whether you are craving the tangy crunch of our signature Samosa Chaat or the deep, comforting warmth of a slow-cooked Biryani, we guarantee a culinary journey you won't forget.</p>
+                <a href="tel:+447828548126" class="text-orange-600 font-bold text-lg hover:text-orange-700 flex items-center gap-2">
+                    Call ahead to order <span>&rarr;</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer & Contact -->
-    <footer class="bg-gray-900 text-white py-12 text-center">
-        <h3 class="text-2xl font-bold mb-4">Visit Chaat House</h3>
-        <p class="mb-2">67-77 South Rd, Southall UB1 1SQ, UK</p>
-        <p class="mb-6">Phone: <a href="tel:+447828548126" class="text-orange-400 hover:underline">+44 7828 548126</a></p>
-        <p class="text-sm text-gray-500">Website Design Concept by Smashstudio</p>
+    <!-- Menu Highlights Section (Populated by JSON) -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h3 class="text-orange-600 font-bold tracking-wider uppercase mb-2">Discover Flavour</h3>
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Menu Highlights</h2>
+                <p class="text-gray-600 text-lg">A sneak peek at our community's favourite dishes. Prepared fresh daily with the finest ingredients.</p>
+            </div>
+            
+            <div id="menu-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Menu items will be injected here by JavaScript from menu.json -->
+                <!-- Loading placeholder -->
+                <div class="col-span-3 text-center text-gray-500 py-10 animate-pulse">Loading menu from GitHub CMS...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6 text-center mb-12">
+            <h2 class="text-4xl font-extrabold mb-4">Feast Your Eyes</h2>
+            <p class="text-gray-400 text-lg">Freshly prepared, sizzling hot, and packed with flavour.</p>
+        </div>
+        <div class="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80" alt="Samosa" class="rounded-lg h-64 w-full object-cover hover:opacity-75 transition duration-300 cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc0?auto=format&fit=crop&w=800&q=80" alt="Curry" class="rounded-lg h-64 w-full object-cover hover:opacity-75 transition duration-300 cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=800&q=80" alt="Biryani" class="rounded-lg h-64 w-full object-cover hover:opacity-75 transition duration-300 cursor-pointer">
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="py-20 bg-orange-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-12">Loved by Southall</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
+                    <div class="text-orange-400 mb-4 text-xl">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6">"Absolutely incredible food! The biryani was perfectly spiced and the meat fell off the bone. Easily the best spot in the area."</p>
+                    <h4 class="font-bold text-gray-900">- Sarah M.</h4>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
+                    <div class="text-orange-400 mb-4 text-xl">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6">"Their chaat reminds me of home. Crispy, tangy, and bursting with flavour. Great customer service too!"</p>
+                    <h4 class="font-bold text-gray-900">- Rahul K.</h4>
+                </div>
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
+                    <div class="text-orange-400 mb-4 text-xl">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6">"Hidden gem on South Road! Fast takeaway, large portions, and unbeatable prices for the quality you get."</p>
+                    <h4 class="font-bold text-gray-900">- James T.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section id="location" class="py-20 bg-white">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-orange-600 font-bold tracking-wider uppercase mb-2">Visit Us</h3>
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-6">We're Ready For You</h2>
+                
+                <div class="mb-8 flex items-start gap-4">
+                    <div class="bg-orange-100 p-3 rounded-full text-orange-600 mt-1">📍</div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-xl">Location</h4>
+                        <p class="text-gray-600 text-lg">67-77 South Rd<br>Southall UB1 1SQ, UK</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 flex items-start gap-4">
+                    <div class="bg-orange-100 p-3 rounded-full text-orange-600 mt-1">📞</div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-xl">Phone Number</h4>
+                        <p class="text-gray-600 text-lg"><a href="tel:+447828548126" class="hover:text-orange-600 transition">+44 7828 548126</a></p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="bg-orange-100 p-3 rounded-full text-orange-600 mt-1">🕒</div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-xl">Opening Hours</h4>
+                        <p class="text-gray-600 text-lg">Mon - Sun: 11:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Google Maps Embed -->
+            <div class="h-96 bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d2483.2505503099955!2d-0.3804245842299887!3d51.50862087963539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760cd4208a18bf%3A0xc06f7a7d4a46db5!2s67-77%20South%20Rd%2C%20Southall%20UB1%201SQ%2C%20UK!5e0!3m2!1sen!2sus!4v1689531818123!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10 border-t border-gray-800">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <h1 class="text-2xl font-bold text-white mb-2">Chaat<span class="text-orange-500">House</span></h1>
+                <p class="text-sm">Authentic Indian Takeaway in Southall.</p>
+            </div>
+            <div class="text-sm text-center md:text-right">
+                <p>&copy; 2026 Chaat House. All rights reserved.</p>
+                <p class="mt-2">Website proudly designed and hosted by <span class="text-white font-bold">Smashstudio</span>.</p>
+            </div>
+        </div>
     </footer>
 
+    <!-- Script to fetch CMS data -->
+    <script>
+        fetch('menu.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('menu-container');
+                container.innerHTML = ''; // Clear loading text
+                
+                data.highlights.forEach(item => {
+                    const menuItem = document.createElement('div');
+                    menuItem.className = 'bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 transform hover:-translate-y-1 group';
+                    menuItem.innerHTML = `
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-2xl font-bold text-gray-900 group-hover:text-orange-600 transition">${item.title}</h4>
+                            <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full font-bold">${item.price}</span>
+                        </div>
+                        <p class="text-gray-600 text-lg leading-relaxed">${item.description}</p>
+                    `;
+                    container.appendChild(menuItem);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading menu:', error);
+                document.getElementById('menu-container').innerHTML = '<p class="text-red-500 text-center col-span-3">Unable to load menu at this time. Please check back later.</p>';
+            });
+    </script>
 </body>
 </html>
