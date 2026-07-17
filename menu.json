@@ -3,33 +3,39 @@
   "highlights": [
     {
       "title": "Pani Puri & Dahi Puri",
-      "description": "Hollow crispy puris filled with spiced mashed potatoes, topped with your choice of tangy tamarind water or sweetened yogurt.",
-      "price": "£5.50"
+      "description": "Crispy puris with spiced potatoes and tangy tamarind.",
+      "price": "£5.50",
+      "image": "https://images.unsplash.com/photo-1565557613262-1bf668b556f8?auto=format&fit=crop&w=600&q=80"
     },
     {
-      "title": "Signature Samosa Chaat",
-      "description": "Crushed golden samosas smothered in fresh yogurt, tangy tamarind chutney, zesty mint sauce, and crunchy sev.",
-      "price": "£6.95"
+      "title": "Samosa Chaat",
+      "description": "Crushed golden samosas with fresh yogurt, mint, and sev.",
+      "price": "£6.95",
+      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80"
     },
     {
       "title": "Chana Bhatura",
-      "description": "A Punjabi classic. Spiced, slow-cooked chickpea curry served alongside golden, fluffy fried bread and fresh onions.",
-      "price": "£8.95"
+      "description": "Spiced chickpea curry served with fluffy fried bread.",
+      "price": "£8.95",
+      "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=600&q=80"
     },
     {
-      "title": "Authentic Chicken Biryani",
-      "description": "Aromatic basmati rice cooked slowly with tender chicken, saffron, and traditional spices. Served with cooling raita.",
-      "price": "£10.50"
+      "title": "Chicken Biryani",
+      "description": "Aromatic basmati rice cooked with tender chicken.",
+      "price": "£10.50",
+      "image": "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=600&q=80"
     },
     {
       "title": "Lamb Rogan Josh",
-      "description": "Tender pieces of lamb slow-cooked in a rich, deeply spiced tomato and caramelized onion gravy.",
-      "price": "£11.95"
+      "description": "Tender lamb in a rich, deeply spiced tomato gravy.",
+      "price": "£11.95",
+      "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc0?auto=format&fit=crop&w=600&q=80"
     },
     {
       "title": "Warm Gulab Jamun",
-      "description": "Soft milk dumplings served warm in a fragrant cardamom and rose water syrup.",
-      "price": "£4.50"
+      "description": "Soft milk dumplings in a fragrant cardamom syrup.",
+      "price": "£4.50",
+      "image": "https://images.unsplash.com/photo-1589301760014-d929f39ce9b0?auto=format&fit=crop&w=600&q=80"
     }
   ]
 }
